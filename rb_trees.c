@@ -58,6 +58,7 @@ void create_RBTree(struct RBNode *);
 struct RBNode *create_node(int);
 struct RBNode *insertNode(struct RBNode *, struct RBNode *);
 struct RBNode *insertFixUp(struct RBNode *tree, struct RBNode *node_to_fix);
+struct RBNode *deleteNode(struct RBNode *tree, int);
 void inOrderTraverseTree(struct RBNode *);
 
 int main()
@@ -275,6 +276,10 @@ struct RBNode *insertFixUp(struct RBNode *tree, struct RBNode *node_to_fix)
     printf("\nRoot node has the key n color = %d %d \n", tree->key, tree->node_color);
 
     return tree;
+}
+
+struct RBNode *deleteNode(struct RBNode *tree, int val)
+{
 }
 
 void inOrderTraverseTree(struct RBNode *tree)
